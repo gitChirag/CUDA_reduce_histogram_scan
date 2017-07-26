@@ -10,7 +10,7 @@ __global__ void histogram_kernel(const int* const d_container, int* d_histogram,
 	atomicAdd(&d_histogram[bin], 1);
 }
 
-int main2(int argc, char **argv) {
+int main(int argc, char **argv) {
 
 	//Generate a random array of ints
 
